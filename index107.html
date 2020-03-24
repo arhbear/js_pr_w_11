@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            var array = [5, 6, 1, 30, 8, 0, 2, 10, 4];
+            $('body').append("array: " + array + "<br>");
+            array.sort(function(a,b){return a - b});
+            $('body').append("sorted array: " + array);
+        })
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

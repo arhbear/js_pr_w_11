@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            var array = ['a', 'b', 'c', 'b', 'a'];
+            $('body').append("array: " + array + "<br>");
+            var array2 = array.sort();
+            $('body').append("sorted array: " + array2 + "<br>");
+            var array3 = new Array;
+            // a a b b c
+            for(var i = 0; i < array2.length; i++){
+                if(array2[i] == array2[i+1]){
+                    array3.push(array2[i]);
+                    i++;
+                }
+                else array3.push(array2[i]);
+            }
+            $('body').append("sorted array without duplicates: " + array3);
+        })
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

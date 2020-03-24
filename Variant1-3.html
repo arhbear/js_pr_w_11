@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".image").click(function(){
+                    $(this).animate({top: '+=30px'}, "slow");
+                });
+                $("button").click(function(){
+                    $(".p:eq(2)").animate({left: '+=100px'}, "slow");
+                    $(".p:eq(4)").animate({left: '+=100px'}, "slow");
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <button>Запустить Анимацию</button>
+        <div class="p" style="position: absolute; top: 25px;left: 10">
+            <p>SOME TEXT</p>
+        </div>
+        <div class="image" style="position: absolute; top: 70px;">
+            <img src="landscape.jpg">
+        </div>
+        <div class="p" style="position: absolute; top: 180px;">
+            <p>SOME TEXT</p>
+        </div>
+        <div class="image" style="position: absolute; top: 225px;">
+            <img src="landscape.jpg">
+        </div>
+        <div class="p" style="position: absolute; top: 335px;">
+            <p>SOME TEXT</p>
+        </div>
+        <div class="image"style="position: absolute; top: 380px;">
+            <img src="landscape.jpg">
+        </div>
+        <div class="p" style="position: absolute; top: 490px;">
+            <p>SOME TEXT</p>
+        </div>
+        <div class="image" style="position: absolute; top: 535px;">
+            <img src="landscape.jpg">
+        </div>
+        <div class="p" style="position: absolute; top: 645px;">
+            <p>SOME TEXT</p>
+        </div>
+
+    </body>
+</html>

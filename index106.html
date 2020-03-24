@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            var array = [1, 2, 3, 4, 5];
+            $('body').append("array: " + array + "<br>");
+            array.splice(1,0,['a','b']);
+            array.splice(5,0,'c');
+            array.splice(7,0,'e');
+            $('body').append("spliced array: " + array);
+        })
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

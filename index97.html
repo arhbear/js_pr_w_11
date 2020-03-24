@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            var array = ['Апрель', 'Май', 'Июнь'];
+            $('body').append("array: " + array + "<br>");
+            array.unshift('Январь', 'Февраль','Март');
+            $('body').append("unshifted array: " + array);
+        })
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <title>Пример 1 с массивами</title>
+        <script>
+            var myArray = new Array();
+            var toWrite = "";
+            myArray[0] = 1989;
+            myArray[1] = "Азаренко";
+            myArray[2] = true;
+            $(document).ready(function(){
+                myArray.forEach((item) => {
+                        toWrite += item + " ";
+                });
+                $("div").html(toWrite);
+            })
+        </script>
+    </head>
+    <body>
+        Очень простой пример работы с массивами!
+        <div>
+        </div>
+    </body>
+</html>
